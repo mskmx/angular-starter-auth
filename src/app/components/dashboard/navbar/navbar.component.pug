@@ -1,0 +1,7 @@
+mat-toolbar(color='primary')
+	span Bienvenido
+	span.example-spacer
+	button(mat-button *ngFor='let item of menu' '[routerLink]'="item.redirect") {{item.nombre}}
+	span.example-spacer
+	button.example-icon(mat-icon-button (click)="logOut()"  aria-label='Logout')
+		mat-icon logout

@@ -1,0 +1,12 @@
+.body
+	.login
+		img(src='./assets/img/login.png' alt width='50%' height='80%')
+		h1.h3.mb-3.fw-normal Login
+		mat-form-field.ancho( appearance='fill')
+			mat-label Usuario
+			input( matInput [(ngModel)]="username" autocomplete="false" )
+		mat-form-field.ancho( appearance='fill')
+			mat-label Contraseña
+			input( matInput [(ngModel)]="password" autocomplete="false"  type='password')
+		br
+		button.ancho((click)='ingresar()' mat-raised-button mat-button color='primary') Ingresar
